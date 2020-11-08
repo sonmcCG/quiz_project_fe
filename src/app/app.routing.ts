@@ -24,10 +24,19 @@ export const routes: Routes = [
     },
     children: [
       {
-        path: 'employee',
-        loadChildren: () => import('./views/employee/employee.module').then(m => m.EmployeeModule),
-        canActivate: [AdminGuard]
-      } 
+        path: 'user',
+        loadChildren: () => import('./views/user/user.module').then(m => m.UserModule),
+       // canActivate: [AdminGuard]
+      } ,
+      {
+        path: 'question',
+        loadChildren: () => import('./views/question/question.module').then(m => m.QuestionModule),
+       // canActivate: [AdminGuard]
+      } ,      {
+        path: 'exam',
+        loadChildren: () => import('./views/exam/exam.module').then(m => m.EmployeeModule),
+        //canActivate: [AdminGuard]
+      }
     ]
   }
 ];

@@ -1,19 +1,20 @@
-import { NgModule } from '@angular/core';
-import { EmployeeRoutingModule } from './employee-routing.module';
+import { NgModule } from '@angular/core'; 
 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { EmployeeComponent } from './employee.component';
+ 
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { ExamComponent } from './exam.component';
+import { ExamRouting } from './exam.routing';
 
 
 @NgModule({
   imports: [
-    EmployeeRoutingModule,
+    ExamRouting,
     CommonModule,
     FormsModule,
     ModalModule.forRoot()
   ],
-  declarations: [EmployeeComponent]
+  declarations: [ExamComponent]
 })
 export class EmployeeModule { }

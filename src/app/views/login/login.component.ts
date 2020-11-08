@@ -41,6 +41,6 @@ export class LoginComponent {
           window.alert('Connection Error !');
         })
     } */
-    this.router.navigate(['/employee']);
+    this.router.navigate(['/user']);
   }
 }
